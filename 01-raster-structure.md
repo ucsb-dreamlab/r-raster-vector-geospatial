@@ -29,7 +29,6 @@ source: Rmd
 
 ::::::::::::::::::::::::::::::::::::::::::  prereq
 
-## Test edit in episode
 ## Things You'll Need To Complete This Episode
 
 See the [lesson homepage](.) for detailed information about the software,
