@@ -5,6 +5,9 @@
 
 # R for Raster and Vector Data
 
+## This is a fork of the canonical lesson for geo4Lib
+Summer, 2023
+
 ## Contributing to lesson development
 
 - The lesson files to be edited are in the `_episodes` folder. This repository uses the `main` branch for development.
