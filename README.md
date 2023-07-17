@@ -11,9 +11,9 @@ Summer, 2023
 ### Possibilities
 - Re-outline an introduction to geospatial data from scratch
 - Closely read 3-4 episodes and put together detailed issues and start forks in small groups
- - 10' Workbench / Issues overview
- - 60' Small groups
- - 20' Report back discussion of issues
+ -- 10' Workbench / Issues overview
+ -- 60' Small groups
+ -- 20' Report back discussion of issues
 - 90 minutes open discussion on the learning goals for this workshop
 
 
