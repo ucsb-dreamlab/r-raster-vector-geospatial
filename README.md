@@ -9,13 +9,14 @@
 Summer, 2023
 
 ### Possibilities
-- Re-outline an introduction to geospatial data from scratch
+At Geo4lib Camp on July 24, the group will have 90 minutes to look at this geospatial Data Carpentry lesson. In the spirit of Un-Conference, we are prepared to take this discussion in 1 of these 4 directions:
+- Re-outline an introduction to geospatial data from scratch. This lesson is a giant monster-- more than 11 hours! Can we outline a better way to provide an introduction to scripting-based GIS? This would be a largely white-board and sticky-note session.
 - Closely read 3-4 episodes and put together detailed issues and start forks in small groups
-    - 10' Workbench / Issues overview
-    - 60' Small groups
-    - 20' Report back discussion of issues
-- 90 minutes open discussion on the learning goals for this workshop
-- 90 minutes on using the WorkBench and the Carpentries teaching method
+    - Brief overview of the Carpentries Workbench / Issues
+    - Small groups create issues and start writing markdown in forks of the lesson--with pull requests to happen after the conference.
+    - Report back on issues
+- An open discussion on the learning objectives for this lesson. Each episode has stated objectives at the top. Are they accurate? Are the goals achievable based on the content?
+- A brief hands-on overview of using the Carpentries WorkBench demonstrating the Carpentries teaching method. 
 
 
 ## Contributing to lesson development
