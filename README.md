@@ -15,6 +15,7 @@ Summer, 2023
     - 60' Small groups
     - 20' Report back discussion of issues
 - 90 minutes open discussion on the learning goals for this workshop
+- 90 minutes on using the WorkBench and the Carpentries teaching method
 
 
 ## Contributing to lesson development
