@@ -80,7 +80,9 @@ the spatial object as the cropping boundary.
 To illustrate this, we will crop the Canopy Height Model (CHM) to only include
 the area of interest (AOI). Let's start by plotting the full extent of the CHM
 data and overlay where the AOI falls within it. The boundaries of the AOI will
-be colored blue, and we use `fill = NA` to make the area transparent.
+be colored blue, and we use `fill = NA` to make the area transparent. 
+Make sure this CHM layer is imported from (...HARV/CHM/HARV_chmCrop.tif). 
+Do not use the CHM layer created in episode 4 or you will run into an error. 
 
 
 ```r
