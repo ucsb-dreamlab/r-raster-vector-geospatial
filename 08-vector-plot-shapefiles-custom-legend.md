@@ -261,6 +261,7 @@ layer. On top of the CHM, please add:
 - The tower location.
 
 Be sure to give your plot a meaningful title.
+**You should import a new raster layer as CHM_HARV, do not use the CHM_HARV layer we created in episode 4**
 
 :::::::::::::::  solution
 
