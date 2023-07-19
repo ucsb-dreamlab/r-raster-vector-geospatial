@@ -39,6 +39,7 @@ lines_HARV <-
 aoi_boundary_HARV <-
   st_read("data/NEON-DS-Site-Layout-Files/HARV/HarClip_UTMZ18.shp")
 
+#Make sure a new CHM layer is reloaded for this episode. Do not use the layer created in episode 4. 
 # CHM
 CHM_HARV <-
   rast("data/NEON-DS-Airborne-Remote-Sensing/HARV/CHM/HARV_chmCrop.tif")
@@ -90,7 +91,7 @@ we have worked with in this workshop:
 
 ```{r view-extents, echo=FALSE, results="hide"}
 # code not shown, for demonstration purposes only
-# create CHM as a vector layer
+# create CHM as a vector layer. 
 CHM_HARV_sp <- st_as_sf(CHM_HARV_df, coords = c("x", "y"), crs = utm18nCRS)
 # approximate the boundary box with a random sample of raster points
 CHM_rand_sample <- sample_n(CHM_HARV_sp, 10000)
@@ -132,7 +133,9 @@ the spatial object as the cropping boundary.
 To illustrate this, we will crop the Canopy Height Model (CHM) to only include
 the area of interest (AOI). Let's start by plotting the full extent of the CHM
 data and overlay where the AOI falls within it. The boundaries of the AOI will
-be colored blue, and we use `fill = NA` to make the area transparent.
+be colored blue, and we use `fill = NA` to make the area transparent. 
+Make sure this CHM layer is imported from (...HARV/CHM/HARV_chmCrop.tif). 
+Do not use the CHM layer created in episode 4 or you will run into an error. 
 
 ```{r crop-by-vector-extent}
 ggplot() +
