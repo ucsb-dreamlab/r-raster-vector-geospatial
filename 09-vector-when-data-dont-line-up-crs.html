@@ -652,13 +652,23 @@ three data sets together without doing any conversion:</p>
 </h3>
 <pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu">ggplot</span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu">geom_sf</span><span class="op">(</span>data <span class="op">=</span> <span class="va">country_boundary_US</span>, size <span class="op">=</span> <span class="fl">2</span>, color <span class="op">=</span> <span class="st">"gray18"</span><span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu">geom_sf</span><span class="op">(</span>data <span class="op">=</span> <span class="va">state_boundary_US</span>, color <span class="op">=</span> <span class="st">"gray40"</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu">geom_sf</span><span class="op">(</span>data <span class="op">=</span> <span class="va">state_boundary_US</span>, color <span class="op">=</span> <span class="st">"gray60"</span><span class="op">)</span></span></code></pre>
+</div>
+<figure><img src="fig/09-vector-when-data-dont-line-up-crs-rendered-layer-point-on-states-1.png" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure><div class="codewrapper sourceCode" id="cb18">
+<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="downlit sourceCode r">
+<code class="sourceCode R"><span>  <span class="fu">geom_sf</span><span class="op">(</span>data <span class="op">=</span> <span class="va">country_boundary_US</span>, size <span class="op">=</span> <span class="fl">5</span>,alpha <span class="op">=</span><span class="fl">0.25</span>, color <span class="op">=</span> <span class="st">"black"</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu">geom_sf</span><span class="op">(</span>data <span class="op">=</span> <span class="va">point_HARV</span>, shape <span class="op">=</span> <span class="fl">19</span>, color <span class="op">=</span> <span class="st">"purple"</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu">ggtitle</span><span class="op">(</span><span class="st">"Map of Contiguous US State Boundaries"</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu">coord_sf</span><span class="op">(</span><span class="op">)</span></span></code></pre>
 </div>
-<figure><img src="fig/09-vector-when-data-dont-line-up-crs-rendered-layer-point-on-states-1.png" style="display: block; margin: auto;" class="figure mx-auto d-block"></figure><div id="challenge---plot-multiple-layers-of-spatial-data" class="callout challenge">
+<div class="codewrapper">
+<h3 class="code-label">ERROR<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="error" tabindex="0"><code>Error in geom_sf(data = country_boundary_US, size = 5, alpha = 0.25, color = "black") + : non-numeric argument to binary operator</code></pre>
+</div>
+<div id="challenge---plot-multiple-layers-of-spatial-data" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
@@ -687,7 +697,7 @@ Tower location point.</li>
 </button>
 <div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
-<div class="codewrapper sourceCode" id="cb18">
+<div class="codewrapper sourceCode" id="cb20">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
@@ -707,7 +717,7 @@ Bounding box:  xmin: -80.51989 ymin: 37.91685 xmax: -66.9499 ymax: 47.45716
 z_range:       zmin: 0 zmax: 0
 Geodetic CRS:  WGS 84</code></pre>
 </div>
-<div class="codewrapper sourceCode" id="cb20">
+<div class="codewrapper sourceCode" id="cb22">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
