@@ -156,13 +156,20 @@ boundaries and country boundaries.
 
 ```r
 ggplot() +
-  geom_sf(data = country_boundary_US, color = "gray18", size = 2) +
-  geom_sf(data = state_boundary_US, color = "gray40") +
+  geom_sf(data = state_boundary_US, color = "gray60") +
+  geom_sf(data = country_boundary_US, color = "black",alpha = 0.25,size = 5)
+```
+
+<img src="fig/09-vector-when-data-dont-line-up-crs-rendered-us-boundaries-thickness-1.png" style="display: block; margin: auto;" />
+
+```r
   ggtitle("Map of Contiguous US State Boundaries") +
   coord_sf()
 ```
 
-<img src="fig/09-vector-when-data-dont-line-up-crs-rendered-us-boundaries-thickness-1.png" style="display: block; margin: auto;" />
+```{.output}
+NULL
+```
 
 Next, let's add the location of a flux tower where our study area is.
 As we are adding these layers, take note of the CRS of each object.
