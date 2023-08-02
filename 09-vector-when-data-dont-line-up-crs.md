@@ -298,14 +298,21 @@ conversion:
 
 ```r
 ggplot() +
-  geom_sf(data = country_boundary_US, size = 2, color = "gray18") +
-  geom_sf(data = state_boundary_US, color = "gray40") +
+  geom_sf(data = state_boundary_US, color = "gray60")
+```
+
+<img src="fig/09-vector-when-data-dont-line-up-crs-rendered-layer-point-on-states-1.png" style="display: block; margin: auto;" />
+
+```r
+  geom_sf(data = country_boundary_US, size = 5,alpha =0.25, color = "black") +
   geom_sf(data = point_HARV, shape = 19, color = "purple") +
   ggtitle("Map of Contiguous US State Boundaries") +
   coord_sf()
 ```
 
-<img src="fig/09-vector-when-data-dont-line-up-crs-rendered-layer-point-on-states-1.png" style="display: block; margin: auto;" />
+```{.error}
+Error in geom_sf(data = country_boundary_US, size = 5, alpha = 0.25, color = "black") + : non-numeric argument to binary operator
+```
 
 :::::::::::::::::::::::::::::::::::::::  challenge
 
